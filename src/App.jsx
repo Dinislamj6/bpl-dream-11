@@ -5,6 +5,8 @@ import Bannner from './Components/navbar/HomePage/Banner/Bannner'
 import Players from './Components/navbar/HomePage/players/Players'
 import Navbar from './Components/navbar/Navbar'
 import { ToastContainer } from 'react-toastify'
+import Newsletter from './Components/newslatter/Newsletter'
+import Footer from './Components/footer/Footer'
 const fetchPlayer = async () => {
   const res = await fetch("/data.json")
   return res.json()
@@ -35,6 +37,12 @@ function App() {
         theme="dark"
         
       />
+      <div className='relative'>
+        <Newsletter></Newsletter>
+    
+         <Footer></Footer>
+      </div>
+      
     </>
   )
 }
